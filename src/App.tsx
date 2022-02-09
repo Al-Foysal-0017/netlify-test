@@ -13,6 +13,7 @@ import NotFound from "./pages/notFound";
 import PrivacyPolicy from "./pages/privacyPolicy";
 import ScrollToTop from "./components/scrollToTop";
 import "./_app.scss";
+import ReactGA from "react-ga";
 
 function App() {
   useEffect(() => {
@@ -23,12 +24,13 @@ function App() {
     });
   }, []);
 
-  // useEffect(() => {
-  //   // ReactGA.initialize("G-2RWJCW96CF"); //Lian sir
-  //   // ReactGA.initialize("G-9H8YD31NBE"); //Naiem Foysal
-  //   ReactGA.initialize("G-CQ8WJQB378"); //Al Foysal
-  //   ReactGA.pageview(window.location.pathname + window.location.search);
-  // }, []);
+  useEffect(() => {
+    // ReactGA.initialize("G-2RWJCW96CF"); //Lian sir
+    // ReactGA.initialize("G-9H8YD31NBE"); //Naiem Foysal
+    ReactGA.initialize("G-BTZCYD4FR6"); //Al Foysal
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
+
   return (
     <>
       <motion.div initial="hidden" animate="show" className="App">
