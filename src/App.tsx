@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useEffect } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Switch, Route, withRouter } from "react-router-dom";
 // import ReactGA from "react-ga";
 // import AOS from "aos";
 import "aos/dist/aos.css";
@@ -39,17 +39,22 @@ function App() {
       <motion.div initial="hidden" animate="show" className="App">
         <ScrollToTop />
         <Navbar />
-        <Routes>
-          <Route index element={<Home />} />
-          <Route path="our-vision" element={<OurVision />} />
+        <Switch>
+          {/* <Route index component={<Home />} /> */}
+          <Route path="/" exact component={Home} />
+          <Route path="/our-vision" exact component={OurVision} />
+          <Route path="/drops" exact component={Drops} />
+          <Route path="/privacy-policy" exact component={PrivacyPolicy} />
+          {/* <Route path="our-vision" element={<OurVision />} />
           <Route path="drops" element={<Drops />} />
-          <Route path="privacy-policy" element={<PrivacyPolicy />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+          <Route path="privacy-policy" element={<PrivacyPolicy />} /> */}
+          {/* <Route path="*" element={<NotFound />} /> */}
+          <Route component={NotFound} />
+        </Switch>
         <Footer />
       </motion.div>
     </>
   );
 }
 
-export default App;
+export default withRouter(App);

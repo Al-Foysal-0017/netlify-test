@@ -17,7 +17,7 @@
     "react-ga": "^3.3.0",
     "react-icons": "^4.3.1",
     "react-intersection-observer": "^8.33.1",
-    "react-router-dom": "^6.2.1",
+    "react-router-dom": "5.2.0",
     "react-scripts": "5.0.0",
     "sass": "^1.49.7",
     "sass-loader": "^12.4.0",
@@ -50,6 +50,7 @@
   },
   "devDependencies": {
     "@types/aos": "^3.0.4",
-    "@types/react": "^17.0.39"
+    "@types/react": "^17.0.39",
+    "@types/react-router-dom": "^5.3.3"
   }
 }
