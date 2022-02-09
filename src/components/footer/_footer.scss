@@ -1,0 +1,123 @@
+@import '../../base';
+
+.footer_image {
+   display: flex;
+   flex-direction: row-reverse;
+   margin-top: 4rem;
+}
+
+.animate-spin {
+   animation: spin 9s linear infinite;
+}
+
+@keyframes spin {
+   from {
+      transform: rotate(0deg);
+   }
+
+   to {
+      transform: rotate(360deg);
+   }
+}
+
+.footer {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   font-size: 14px;
+   height: 2rem;
+   margin-top: 20px;
+
+   &__img {
+      cursor: pointer;
+   }
+
+   &__links {
+      display: flex;
+
+      &__link {
+         padding: 0 5px;
+         font-size: 14px;
+         font-weight: bold;
+         cursor: pointer;
+
+
+         a {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            justify-content: center;
+         }
+
+         &__icon {
+            display: flex;
+            align-self: center;
+            margin-right: 4px;
+            opacity: 0.8;
+         }
+      }
+   }
+}
+
+.footer-bottom {
+   display: flex;
+   justify-content: space-between;
+   padding: 18px 0 76px 0;
+   height: 5rem;
+
+   &__link {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      color: #e4e7ec;
+      cursor: pointer;
+      margin-left: 13px;
+      opacity: 0.9;
+   }
+
+   &__year {
+      font-size: 16px;
+      line-height: 24px;
+      text-align: right;
+      color: rgba(255, 255, 255, 0.5);
+   }
+}
+
+@media (max-width: $tablet) {
+   .footer_image {
+      flex-direction: row;
+      justify-content: center;
+   }
+
+   .footer {
+      display: flex;
+      flex-direction: column;
+      height: 4rem;
+   }
+
+   .footer-bottom {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 7rem;
+
+      &__link {
+         margin-left: 0;
+      }
+   }
+}
+
+@media (max-width: $small) {
+   .footer__links__link {
+      font-size: 12px;
+      font-weight: 600;
+   }
+
+   .footer__links__link__icon {
+      display: none;
+   }
+
+   .footer-bottom__year {
+      font-size: 10px;
+   }
+}

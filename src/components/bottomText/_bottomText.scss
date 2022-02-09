@@ -1,0 +1,21 @@
+@import "../../base";
+
+.bottom-text-container {
+  display: flex;
+  align-items: center;
+}
+
+.bottom-text-link {
+  font-weight: bold;
+  margin-left: 2rem;
+}
+
+@media screen and (max-width: $tablet) {
+  .bottom-text-container {
+    display: inline;
+  }
+  .bottom-text-link {
+    margin-left: 14px;
+    margin-top: 1rem;
+  }
+}

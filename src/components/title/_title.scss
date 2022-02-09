@@ -1,0 +1,43 @@
+@import "../../base";
+
+.theia_title {
+   font-size: 96px;
+   font-weight: 900;
+   text-transform: uppercase;
+}
+
+@media (max-width: $laptop) {
+   .theia_title {
+      font-size: 80px;
+   }
+}
+
+@media (max-width: $tablet) {
+   .theia_title {
+      font-size: 58px;
+   }
+}
+
+@media (max-width: $mobile) {
+   .theia_title {
+      font-size: 45px;
+   }
+}
+
+@media (max-width: 500px) {
+   .theia_title {
+      font-size: 35px;
+   }
+}
+
+@media (max-width: $small) {
+   .theia_title {
+      font-size: 30px;
+   }
+}
+
+@media (max-width: 350px) {
+   .theia_title {
+      font-size: 25px;
+   }
+}

@@ -1,0 +1,56 @@
+.wrapper2 {
+  display: inline-flex;
+}
+
+.wrapper2 .dynamic-txts2 {
+  line-height: 23px;
+  height: 23px;
+  overflow: hidden;
+}
+
+.dynamic-txts2 li {
+  list-style: none;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+  top: 0;
+  animation: slide2 12s steps(4) infinite; /* 4 words hence steps 4 && (3*4=12s)*/
+}
+@keyframes slide2 {
+  100% {
+    top: -92px; /* (18 * 4 + 5 * 4)=92px; Here, 10*4 for line height 23-18=5  */
+  }
+}
+
+.dynamic-txts2 li span {
+  position: relative;
+  text-transform: uppercase;
+}
+
+.dynamic-txts2 li span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-left: 2px solid #fff;
+  background: #000;
+  animation: typing2 3s steps(5) infinite;
+}
+
+/* @keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
+} */
+
+@keyframes typing2 {
+  40%,
+  60% {
+    left: calc(100% + 35px);
+  }
+  100% {
+    left: 0;
+  }
+}

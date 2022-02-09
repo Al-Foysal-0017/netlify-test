@@ -1,0 +1,39 @@
+@import "../../base";
+
+.not-found {
+  height: calc(100vh - 250px);
+
+  &__Cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding-top: 80px;
+
+    &__btnCont {
+      margin-top: 32px;
+
+      &__btn {
+        width: 100%;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 12px 32px;
+        box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+        border-radius: 56px;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .not-found__Cont__btnCont__btn {
+    font-weight: 500;
+    font-size: 14px;
+    padding: 8px 18px;
+  }
+}

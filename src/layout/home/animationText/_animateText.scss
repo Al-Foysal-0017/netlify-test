@@ -1,0 +1,42 @@
+@import "../../../base";
+
+.animateTextHome {
+  height: 70px;
+}
+
+.marginAnimateHero {
+  margin-top: 1.5rem;
+}
+
+@media screen and (max-width: $laptop) {
+  .animateTextHome {
+    height: 58px;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .animateTextHome {
+    height: 44px;
+  }
+  .marginAnimateHero {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .animateTextHome {
+    height: 34px;
+  }
+  .marginAnimateHero {
+    margin-top: 0.5rem;
+  }
+}
+
+@media screen and (max-width: $small) {
+  .animateTextHome {
+    height: 24px;
+  }
+  .marginAnimateHero {
+    margin-top: 0.5rem;
+  }
+}

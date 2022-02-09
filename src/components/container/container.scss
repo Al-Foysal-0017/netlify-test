@@ -1,0 +1,31 @@
+@import "../../_base.scss";
+
+.theia__container {
+  padding: 0 4rem;
+  max-width: $desktop;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: $laptop) {
+  .theia__container {
+    padding: 0 3rem;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .theia__container {
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .theia__container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media screen and (max-width: $small) {
+  .theia__container {
+    padding: 0 1rem;
+  }
+}

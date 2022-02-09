@@ -1,0 +1,104 @@
+@import "../../base";
+
+.policy {
+   min-height: 100vh;
+   padding: 0 207px;
+
+   &__header {
+      margin-top: 48px;
+      font-weight: 600;
+      font-size: 48px;
+      letter-spacing: -0.02em;
+
+      &__text {
+         padding-top: 56px;
+         font-style: normal;
+         font-weight: 500;
+         font-size: 17px;
+         line-height: 28px;
+         color: rgba(255, 255, 255, 0.7);
+      }
+   }
+
+   &__content {
+      margin-top: 32px;
+
+      &__header {
+         margin-bottom: 16px;
+         font-style: normal;
+         font-weight: 600;
+         font-size: 24px;
+         line-height: 32px;
+         color: #ffffff;
+      }
+
+      &__text {
+         padding-top: 8px;
+         font-style: normal;
+         font-weight: normal;
+         font-size: 16px;
+         line-height: 24px;
+         color: rgba(255, 255, 255, 0.7);
+      }
+
+      ul {
+         margin-left: 16px;
+         margin-top: 5px;
+         margin-bottom: 5px;
+      }
+
+      li {
+         padding-top: 5px;
+         font-style: normal;
+         font-weight: normal;
+         font-size: 16px;
+         line-height: 24px;
+         color: rgba(255, 255, 255, 0.7);
+      }
+   }
+
+   &__contact-ul {
+      margin-top: 16px;
+   }
+}
+
+
+
+@media screen and (max-width: $laptop) {
+   .policy {
+      padding: 0 120px;
+   }
+}
+
+@media screen and (max-width: $tablet) {
+   .policy {
+      padding: 0 50px;
+   }
+}
+
+@media screen and (max-width: $mobile) {
+   .policy {
+      padding: 0;
+   }
+}
+
+@media screen and (max-width: $small) {
+   .policy {
+      padding: 0;
+   }
+}
+
+@media screen and (max-width: 424px) {
+   .policy {
+      padding: 0;
+
+      &__header {
+         margin-top: 48px;
+         font-size: 32px;
+
+         &__text {
+            padding-top: 40px;
+         }
+      }
+   }
+}
