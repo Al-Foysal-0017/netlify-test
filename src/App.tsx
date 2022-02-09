@@ -27,7 +27,7 @@ function App() {
   useEffect(() => {
     // ReactGA.initialize("G-2RWJCW96CF"); //Lian sir
     // ReactGA.initialize("G-9H8YD31NBE"); //Naiem Foysal
-    ReactGA.initialize("G-BTZCYD4FR6"); //Al Foysal
+    ReactGA.initialize("G-V5HWB958E3"); //Al Foysal
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
 
